@@ -10,13 +10,15 @@ import UIKit
 class EventsTableViewCell: UITableViewCell {
     
     var wrapperCellView: UIView!
-    var labelUser: UILabel!
+    var labelIntake: UILabel!
+    var labelConsume: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        setupWrapperCellView()
-        setupLabelUser()
+        setUpWrapperCellView()
+        setUpLabelIntake()
+        setUpLabelConsume()
         initConstraints()
     }
     
@@ -24,7 +26,7 @@ class EventsTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setupWrapperCellView(){
+    func setUpWrapperCellView(){
         wrapperCellView = UITableViewCell()
         
         //working with the shadows and colors...
@@ -38,11 +40,18 @@ class EventsTableViewCell: UITableViewCell {
         self.addSubview(wrapperCellView)
     }
     
-    func setupLabelUser(){
-        labelUser = UILabel()
-        labelUser.font = UIFont.boldSystemFont(ofSize: 20)
-        labelUser.translatesAutoresizingMaskIntoConstraints = false
-        wrapperCellView.addSubview(labelUser)
+    func setUpLabelIntake(){
+        labelIntake = UILabel()
+        labelIntake.font = UIFont.boldSystemFont(ofSize: 20)
+        labelIntake.translatesAutoresizingMaskIntoConstraints = false
+        wrapperCellView.addSubview(labelIntake)
+    }
+    
+    func setUpLabelConsume() {
+        labelConsume = UILabel()
+        labelConsume.font = UIFont.boldSystemFont(ofSize: 20)
+        labelConsume.translatesAutoresizingMaskIntoConstraints = false
+        wrapperCellView.addSubview(labelConsume)
     }
     
     func initConstraints(){
@@ -52,24 +61,28 @@ class EventsTableViewCell: UITableViewCell {
             wrapperCellView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
             wrapperCellView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             
-            labelUser.topAnchor.constraint(equalTo: wrapperCellView.topAnchor, constant: 8),
-            labelUser.leadingAnchor.constraint(equalTo: wrapperCellView.leadingAnchor, constant: 16),
-            labelUser.heightAnchor.constraint(equalToConstant: 20),
-            labelUser.widthAnchor.constraint(lessThanOrEqualTo: wrapperCellView.widthAnchor),
+            labelIntake.topAnchor.constraint(equalTo: wrapperCellView.topAnchor, constant: 8),
+            labelIntake.leadingAnchor.constraint(equalTo: wrapperCellView.leadingAnchor, constant: 16),
+            labelIntake.heightAnchor.constraint(equalToConstant: 20),
+            labelIntake.widthAnchor.constraint(lessThanOrEqualTo: wrapperCellView.widthAnchor),
             
-            wrapperCellView.heightAnchor.constraint(equalToConstant: 35)
+            labelConsume.topAnchor.constraint(equalTo: labelIntake.bottomAnchor, constant: 8),
+            labelConsume.leadingAnchor.constraint(equalTo: wrapperCellView.leadingAnchor, constant: 16),
+            labelConsume.heightAnchor.constraint(equalToConstant: 20),
+            labelConsume.widthAnchor.constraint(lessThanOrEqualTo: wrapperCellView.widthAnchor),
+            
+            wrapperCellView.heightAnchor.constraint(equalToConstant: 80)
         ])
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

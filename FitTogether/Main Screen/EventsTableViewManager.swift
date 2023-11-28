@@ -15,7 +15,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Configs.tableViewEventsId, for: indexPath) as! EventsTableViewCell
-        cell.labelUser.text =  String(eventsList[indexPath.row].intake)
+        cell.labelIntake.text =  "Intake: "  + String(eventsList[indexPath.row].intake)
+        cell.labelConsume.text =  "Consume " + String(eventsList[indexPath.row].consume)
         return cell
     }
     

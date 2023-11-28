@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     let database = Firestore.firestore()
     
+    var totalConsume : Int?
+    
     override func loadView() {
         view = mainScreen
     }
@@ -59,12 +61,18 @@ class ViewController: UIViewController {
                 self.database.collection("users")
                     .document((self.currentUser?.email)!)
                     .collection("events")
-                    .addSnapshotListener(includeMetadataChanges: false, listener: {querySnapshot, error in
+                    .addSnapshotListener(includeMetadataChanges: false, listener: { [self]querySnapshot, error in
                         if let documents = querySnapshot?.documents{
                             self.eventsList.removeAll()
                             for document in documents{
                                 do{
                                     let event  = try document.data(as: Event.self)
+                                    if let intake = Int(exactly: event.intake) {
+                                        if let consume = Int(exactly: event.consume) {
+                                            self.totalConsume = (self.totalConsume ?? 0) + (consume - intake)
+                                        }
+                                    }
+                                    self.mainScreen.labelTotal.text = "You have " + String(totalConsume ?? 0) + " calories workout"
                                     self.eventsList.append(event)
                                 }catch{
                                     print(error)
@@ -88,12 +96,17 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         view.bringSubviewToFront(mainScreen.floatingButtonAddEvent)
         mainScreen.floatingButtonAddEvent.addTarget(self, action: #selector(addEventButtonTapped), for: .touchUpInside)
+        mainScreen.nearbyButton.addTarget(self, action: #selector(nearbyButtonTapped), for: .touchUpInside)
     }
     
     @objc func addEventButtonTapped() {
         let addEventViewController = AddEventViewController()
         addEventViewController.currentUser = currentUser
         navigationController?.pushViewController(addEventViewController, animated: true)
+    }
+    
+    @objc func nearbyButtonTapped() {
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
