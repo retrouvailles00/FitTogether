@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 //MARK: Observe Firestore database to display the contacts list...
                 
                 self.database.collection("users")
-                    .document((self.currentUser?.uid)!)
+                    .document((self.currentUser?.email)!)
                     .collection("events")
                     .addSnapshotListener(includeMetadataChanges: false, listener: {querySnapshot, error in
                         if let documents = querySnapshot?.documents{
@@ -91,7 +91,9 @@ class ViewController: UIViewController {
     }
     
     @objc func addEventButtonTapped() {
-        
+        let addEventViewController = AddEventViewController()
+        addEventViewController.currentUser = currentUser
+        navigationController?.pushViewController(addEventViewController, animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

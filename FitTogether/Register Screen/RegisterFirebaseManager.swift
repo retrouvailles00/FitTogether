@@ -43,21 +43,6 @@ extension RegisterViewController{
                 //MARK: hide the progress indicator...
                 self.hideActivityIndicator()
                 
-                // add the new user to users db
-                let database = Firestore.firestore()
-                var newUser = User(name: name, email: email.lowercased())
-                let collectionUsers = database.collection("users")
-                do{
-                    try collectionUsers.addDocument(from: newUser, completion: {(error) in
-                        if error == nil{
-                            //MARK: hide progress indicator...
-                            self.hideActivityIndicator()
-                        }
-                    })
-                }catch{
-                    print("Error adding document!")
-                }
-                
                 //MARK: pop the current controller...
                 self.navigationController?.popViewController(animated: true)
             }else{
