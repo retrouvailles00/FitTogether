@@ -106,7 +106,8 @@ class ViewController: UIViewController {
     }
     
     @objc func nearbyButtonTapped() {
-        
+        let mapViewController = MapViewController()
+        navigationController?.pushViewController(mapViewController, animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
