@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+import UIKit
+
+struct Event: Codable{
+    @DocumentID var id: String?
+    var intake: Int
+    var consume: Int
+    
+    init(intake: Int, consume: Int) {
+        self.intake = intake
+        self.consume = consume
+    }
+}
