@@ -51,6 +51,9 @@
 		BE9DE3982B15AB1B00C928FE /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3972B15AB1B00C928FE /* AddEventViewController.swift */; };
 		BE9DE39B2B1694FB00C928FE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE39A2B1694FB00C928FE /* MapView.swift */; };
 		BE9DE39D2B16953500C928FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE39C2B16953500C928FE /* MapViewController.swift */; };
+		BE9DE39F2B16A6FD00C928FE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE39E2B16A6FD00C928FE /* Utilities.swift */; };
+		BE9DE3A22B17132300C928FE /* DisplayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A12B17132300C928FE /* DisplayEventView.swift */; };
+		BE9DE3A42B17143B00C928FE /* DisplayEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A32B17143B00C928FE /* DisplayEventViewController.swift */; };
 		BEC49C772B07332500A94F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C762B07332500A94F10 /* AppDelegate.swift */; };
 		BEC49C792B07332500A94F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C782B07332500A94F10 /* SceneDelegate.swift */; };
 		BEC49C7B2B07332500A94F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C7A2B07332500A94F10 /* ViewController.swift */; };
@@ -83,6 +86,9 @@
 		BE9DE3972B15AB1B00C928FE /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		BE9DE39A2B1694FB00C928FE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BE9DE39C2B16953500C928FE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BE9DE39E2B16A6FD00C928FE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		BE9DE3A12B17132300C928FE /* DisplayEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventView.swift; sourceTree = "<group>"; };
+		BE9DE3A32B17143B00C928FE /* DisplayEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventViewController.swift; sourceTree = "<group>"; };
 		BEC49C732B07332500A94F10 /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC49C762B07332500A94F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC49C782B07332500A94F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 			children = (
 				BE2C2F412B154A0A00270149 /* User.swift */,
 				BE2C2F522B154E7000270149 /* Event.swift */,
+				BE9DE39E2B16A6FD00C928FE /* Utilities.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -195,6 +202,15 @@
 			path = "Map Screen";
 			sourceTree = "<group>";
 		};
+		BE9DE3A02B17130300C928FE /* Display Event Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DE3A12B17132300C928FE /* DisplayEventView.swift */,
+				BE9DE3A32B17143B00C928FE /* DisplayEventViewController.swift */,
+			);
+			path = "Display Event Screen";
+			sourceTree = "<group>";
+		};
 		BEC49C6A2B07332500A94F10 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +230,7 @@
 		BEC49C752B07332500A94F10 /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				BE9DE3A02B17130300C928FE /* Display Event Screen */,
 				BE9DE3992B1694DF00C928FE /* Map Screen */,
 				BE9DE3942B159B8A00C928FE /* Add Event Screen */,
 				BE2C2F482B154B4100270149 /* Main Screen */,
@@ -351,14 +368,17 @@
 				BE2C2F472B154A6500270149 /* ProgressSpinnerViewController.swift in Sources */,
 				BE2C2F032B15490A00270149 /* RegisterView.swift in Sources */,
 				BE9DE3982B15AB1B00C928FE /* AddEventViewController.swift in Sources */,
+				BE9DE39F2B16A6FD00C928FE /* Utilities.swift in Sources */,
 				BE2C2F4D2B154BDB00270149 /* Configs.swift in Sources */,
 				BE2C2F422B154A0A00270149 /* User.swift in Sources */,
+				BE9DE3A22B17132300C928FE /* DisplayEventView.swift in Sources */,
 				BE2C2F072B15495200270149 /* RegisterViewController.swift in Sources */,
 				BE9DE3962B159D6100C928FE /* AddEventView.swift in Sources */,
 				BE9DE3932B1579AC00C928FE /* EventsTableViewManager.swift in Sources */,
 				BE2C2F4A2B154B5500270149 /* MainScreenView.swift in Sources */,
 				BE2C2F512B154D3300270149 /* RightBarButtonManager.swift in Sources */,
 				BE9DE39B2B1694FB00C928FE /* MapView.swift in Sources */,
+				BE9DE3A42B17143B00C928FE /* DisplayEventViewController.swift in Sources */,
 				BEC49C772B07332500A94F10 /* AppDelegate.swift in Sources */,
 				BE2C2F452B154A5500270149 /* ProgressSpinnerDelegate.swift in Sources */,
 				BEC49C792B07332500A94F10 /* SceneDelegate.swift in Sources */,

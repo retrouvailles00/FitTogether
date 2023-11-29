@@ -20,10 +20,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let chatViewController = ChatViewController()
-//        chatViewController.currentUser = currentUser
-//        chatViewController.currentReceiver = usersList[indexPath.row]
-//        navigationController?.pushViewController(chatViewController, animated: true)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let displayEventViewController = DisplayEventViewController()
+        navigationController?.pushViewController(displayEventViewController, animated: true)
+    }
 }
