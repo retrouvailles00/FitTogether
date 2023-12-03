@@ -9,5 +9,5 @@ import Foundation
 
 class Configs{
     static let tableViewEventsId = "tableViewUsersID"
-//    static let tableViewMessagesID = "tableViewMessagesID"
+    static let tableViewActivitiesId = "tableViewActivitiesID"
 }

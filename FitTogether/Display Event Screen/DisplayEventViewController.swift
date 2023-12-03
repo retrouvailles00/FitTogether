@@ -11,12 +11,18 @@ class DisplayEventViewController: UIViewController {
     
     let displayEventScreen = DisplayEventView()
     
+    var activitiesList = [Activity]()
+    
     override func loadView() {
         view = displayEventScreen
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        displayEventScreen.tableViewActivities.delegate = self
+        displayEventScreen.tableViewActivities.dataSource = self
+        displayEventScreen.tableViewActivities.separatorStyle = .none
 
         
     }

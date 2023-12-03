@@ -22,6 +22,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let displayEventViewController = DisplayEventViewController()
+        var activities = [Activity]()
+        
+        if (eventsList[indexPath.row].fruit != 0) {
+            activities.append(Activity(type: "fruit", quantity: eventsList[indexPath.row].fruit))
+        }
+        if (eventsList[indexPath.row].vegetable != 0) {
+            activities.append(Activity(type: "vegetable", quantity: eventsList[indexPath.row].vegetable))
+        }
+        if (eventsList[indexPath.row].protein != 0) {
+            activities.append(Activity(type: "protein", quantity: eventsList[indexPath.row].protein))
+        }
+        if (eventsList[indexPath.row].gym != 0) {
+            activities.append(Activity(type: "gym", quantity: eventsList[indexPath.row].gym))
+        }
+        if (eventsList[indexPath.row].bike != 0) {
+            activities.append(Activity(type: "bike", quantity: eventsList[indexPath.row].bike))
+        }
+       
+        displayEventViewController.activitiesList = activities
         navigationController?.pushViewController(displayEventViewController, animated: true)
     }
 }

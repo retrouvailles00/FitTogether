@@ -54,6 +54,15 @@
 		BE9DE39F2B16A6FD00C928FE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE39E2B16A6FD00C928FE /* Utilities.swift */; };
 		BE9DE3A22B17132300C928FE /* DisplayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A12B17132300C928FE /* DisplayEventView.swift */; };
 		BE9DE3A42B17143B00C928FE /* DisplayEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A32B17143B00C928FE /* DisplayEventViewController.swift */; };
+		BE9DE3A62B1D1E1100C928FE /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A52B1D1E1100C928FE /* ActivitiesTableViewCell.swift */; };
+		BE9DE3A82B1D205D00C928FE /* ActivitiesTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A72B1D205D00C928FE /* ActivitiesTableViewManager.swift */; };
+		BE9DE3AA2B1D21CB00C928FE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3A92B1D21CB00C928FE /* Activity.swift */; };
+		BE9DE3AD2B1D286E00C928FE /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3AC2B1D286E00C928FE /* lemon.png */; };
+		BE9DE3AF2B1D287900C928FE /* broccoli.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3AE2B1D287900C928FE /* broccoli.png */; };
+		BE9DE3B12B1D287E00C928FE /* cut_of_meat.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B02B1D287E00C928FE /* cut_of_meat.png */; };
+		BE9DE3B32B1D288300C928FE /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B22B1D288300C928FE /* runner.png */; };
+		BE9DE3B52B1D288800C928FE /* man-biking.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B42B1D288800C928FE /* man-biking.png */; };
+		BE9DE3B72B1D288C00C928FE /* martial_arts_uniform.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */; };
 		BEC49C772B07332500A94F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C762B07332500A94F10 /* AppDelegate.swift */; };
 		BEC49C792B07332500A94F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C782B07332500A94F10 /* SceneDelegate.swift */; };
 		BEC49C7B2B07332500A94F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C7A2B07332500A94F10 /* ViewController.swift */; };
@@ -89,6 +98,15 @@
 		BE9DE39E2B16A6FD00C928FE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		BE9DE3A12B17132300C928FE /* DisplayEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventView.swift; sourceTree = "<group>"; };
 		BE9DE3A32B17143B00C928FE /* DisplayEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventViewController.swift; sourceTree = "<group>"; };
+		BE9DE3A52B1D1E1100C928FE /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		BE9DE3A72B1D205D00C928FE /* ActivitiesTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewManager.swift; sourceTree = "<group>"; };
+		BE9DE3A92B1D21CB00C928FE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		BE9DE3AC2B1D286E00C928FE /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+		BE9DE3AE2B1D287900C928FE /* broccoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broccoli.png; sourceTree = "<group>"; };
+		BE9DE3B02B1D287E00C928FE /* cut_of_meat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cut_of_meat.png; sourceTree = "<group>"; };
+		BE9DE3B22B1D288300C928FE /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
+		BE9DE3B42B1D288800C928FE /* man-biking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-biking.png"; sourceTree = "<group>"; };
+		BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = martial_arts_uniform.png; sourceTree = "<group>"; };
 		BEC49C732B07332500A94F10 /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC49C762B07332500A94F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC49C782B07332500A94F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +178,7 @@
 				BE2C2F412B154A0A00270149 /* User.swift */,
 				BE2C2F522B154E7000270149 /* Event.swift */,
 				BE9DE39E2B16A6FD00C928FE /* Utilities.swift */,
+				BE9DE3A92B1D21CB00C928FE /* Activity.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -207,8 +226,23 @@
 			children = (
 				BE9DE3A12B17132300C928FE /* DisplayEventView.swift */,
 				BE9DE3A32B17143B00C928FE /* DisplayEventViewController.swift */,
+				BE9DE3A52B1D1E1100C928FE /* ActivitiesTableViewCell.swift */,
+				BE9DE3A72B1D205D00C928FE /* ActivitiesTableViewManager.swift */,
 			);
 			path = "Display Event Screen";
+			sourceTree = "<group>";
+		};
+		BE9DE3AB2B1D284800C928FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DE3B22B1D288300C928FE /* runner.png */,
+				BE9DE3B02B1D287E00C928FE /* cut_of_meat.png */,
+				BE9DE3AE2B1D287900C928FE /* broccoli.png */,
+				BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */,
+				BE9DE3B42B1D288800C928FE /* man-biking.png */,
+				BE9DE3AC2B1D286E00C928FE /* lemon.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		BEC49C6A2B07332500A94F10 = {
@@ -230,6 +264,7 @@
 		BEC49C752B07332500A94F10 /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				BE9DE3AB2B1D284800C928FE /* Images */,
 				BE9DE3A02B17130300C928FE /* Display Event Screen */,
 				BE9DE3992B1694DF00C928FE /* Map Screen */,
 				BE9DE3942B159B8A00C928FE /* Add Event Screen */,
@@ -345,10 +380,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9DE3AF2B1D287900C928FE /* broccoli.png in Resources */,
+				BE9DE3B72B1D288C00C928FE /* martial_arts_uniform.png in Resources */,
+				BE9DE3B52B1D288800C928FE /* man-biking.png in Resources */,
 				BEC49C832B07332800A94F10 /* LaunchScreen.storyboard in Resources */,
 				BEC49C8B2B07340500A94F10 /* GoogleService-Info.plist in Resources */,
+				BE9DE3B12B1D287E00C928FE /* cut_of_meat.png in Resources */,
+				BE9DE3AD2B1D286E00C928FE /* lemon.png in Resources */,
 				BEC49C802B07332800A94F10 /* Assets.xcassets in Resources */,
 				BEC49C7E2B07332500A94F10 /* Main.storyboard in Resources */,
+				BE9DE3B32B1D288300C928FE /* runner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +416,7 @@
 				BE2C2F072B15495200270149 /* RegisterViewController.swift in Sources */,
 				BE9DE3962B159D6100C928FE /* AddEventView.swift in Sources */,
 				BE9DE3932B1579AC00C928FE /* EventsTableViewManager.swift in Sources */,
+				BE9DE3A62B1D1E1100C928FE /* ActivitiesTableViewCell.swift in Sources */,
 				BE2C2F4A2B154B5500270149 /* MainScreenView.swift in Sources */,
 				BE2C2F512B154D3300270149 /* RightBarButtonManager.swift in Sources */,
 				BE9DE39B2B1694FB00C928FE /* MapView.swift in Sources */,
@@ -382,6 +424,8 @@
 				BEC49C772B07332500A94F10 /* AppDelegate.swift in Sources */,
 				BE2C2F452B154A5500270149 /* ProgressSpinnerDelegate.swift in Sources */,
 				BEC49C792B07332500A94F10 /* SceneDelegate.swift in Sources */,
+				BE9DE3AA2B1D21CB00C928FE /* Activity.swift in Sources */,
+				BE9DE3A82B1D205D00C928FE /* ActivitiesTableViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
