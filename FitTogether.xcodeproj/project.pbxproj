@@ -65,6 +65,11 @@
 		BE9DE3B72B1D288C00C928FE /* martial_arts_uniform.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */; };
 		BE9DE3BA2B1DA4C300C928FE /* FriendsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3B92B1DA4C300C928FE /* FriendsChatView.swift */; };
 		BE9DE3BC2B1E68CE00C928FE /* FriendsChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3BB2B1E68CE00C928FE /* FriendsChatViewController.swift */; };
+		BE9DE3BE2B1E70B500C928FE /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3BD2B1E70B500C928FE /* FriendsTableViewCell.swift */; };
+		BE9DE3C12B1E815400C928FE /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3C02B1E815400C928FE /* MessagesTableViewCell.swift */; };
+		BE9DE3C32B1E81B000C928FE /* ChatScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3C22B1E81B000C928FE /* ChatScreenView.swift */; };
+		BE9DE3C52B1E81ED00C928FE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3C42B1E81ED00C928FE /* ChatViewController.swift */; };
+		BE9DE3C72B1E820300C928FE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3C62B1E820300C928FE /* Message.swift */; };
 		BEC49C772B07332500A94F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C762B07332500A94F10 /* AppDelegate.swift */; };
 		BEC49C792B07332500A94F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C782B07332500A94F10 /* SceneDelegate.swift */; };
 		BEC49C7B2B07332500A94F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C7A2B07332500A94F10 /* ViewController.swift */; };
@@ -111,6 +116,11 @@
 		BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = martial_arts_uniform.png; sourceTree = "<group>"; };
 		BE9DE3B92B1DA4C300C928FE /* FriendsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsChatView.swift; sourceTree = "<group>"; };
 		BE9DE3BB2B1E68CE00C928FE /* FriendsChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsChatViewController.swift; sourceTree = "<group>"; };
+		BE9DE3BD2B1E70B500C928FE /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		BE9DE3C02B1E815400C928FE /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		BE9DE3C22B1E81B000C928FE /* ChatScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenView.swift; sourceTree = "<group>"; };
+		BE9DE3C42B1E81ED00C928FE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BE9DE3C62B1E820300C928FE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BEC49C732B07332500A94F10 /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC49C762B07332500A94F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC49C782B07332500A94F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +193,7 @@
 				BE2C2F522B154E7000270149 /* Event.swift */,
 				BE9DE39E2B16A6FD00C928FE /* Utilities.swift */,
 				BE9DE3A92B1D21CB00C928FE /* Activity.swift */,
+				BE9DE3C62B1E820300C928FE /* Message.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -254,8 +265,19 @@
 			children = (
 				BE9DE3B92B1DA4C300C928FE /* FriendsChatView.swift */,
 				BE9DE3BB2B1E68CE00C928FE /* FriendsChatViewController.swift */,
+				BE9DE3BD2B1E70B500C928FE /* FriendsTableViewCell.swift */,
 			);
 			path = "Friends Chat Screen";
+			sourceTree = "<group>";
+		};
+		BE9DE3BF2B1E812300C928FE /* Message Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DE3C02B1E815400C928FE /* MessagesTableViewCell.swift */,
+				BE9DE3C22B1E81B000C928FE /* ChatScreenView.swift */,
+				BE9DE3C42B1E81ED00C928FE /* ChatViewController.swift */,
+			);
+			path = "Message Screen";
 			sourceTree = "<group>";
 		};
 		BEC49C6A2B07332500A94F10 = {
@@ -277,6 +299,7 @@
 		BEC49C752B07332500A94F10 /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				BE9DE3BF2B1E812300C928FE /* Message Screen */,
 				BE9DE3B82B1DA4A100C928FE /* Friends Chat Screen */,
 				BE9DE3AB2B1D284800C928FE /* Images */,
 				BE9DE3A02B17130300C928FE /* Display Event Screen */,
@@ -420,15 +443,20 @@
 				BE2C2F4F2B154C1000270149 /* EventsTableViewCell.swift in Sources */,
 				BE9DE39D2B16953500C928FE /* MapViewController.swift in Sources */,
 				BEC49C7B2B07332500A94F10 /* ViewController.swift in Sources */,
+				BE9DE3C72B1E820300C928FE /* Message.swift in Sources */,
 				BE2C2F532B154E7000270149 /* Event.swift in Sources */,
+				BE9DE3C12B1E815400C928FE /* MessagesTableViewCell.swift in Sources */,
 				BE9DE3BA2B1DA4C300C928FE /* FriendsChatView.swift in Sources */,
 				BE2C2F472B154A6500270149 /* ProgressSpinnerViewController.swift in Sources */,
 				BE2C2F032B15490A00270149 /* RegisterView.swift in Sources */,
 				BE9DE3982B15AB1B00C928FE /* AddEventViewController.swift in Sources */,
 				BE9DE39F2B16A6FD00C928FE /* Utilities.swift in Sources */,
 				BE2C2F4D2B154BDB00270149 /* Configs.swift in Sources */,
+				BE9DE3C32B1E81B000C928FE /* ChatScreenView.swift in Sources */,
+				BE9DE3BE2B1E70B500C928FE /* FriendsTableViewCell.swift in Sources */,
 				BE2C2F422B154A0A00270149 /* User.swift in Sources */,
 				BE9DE3A22B17132300C928FE /* DisplayEventView.swift in Sources */,
+				BE9DE3C52B1E81ED00C928FE /* ChatViewController.swift in Sources */,
 				BE2C2F072B15495200270149 /* RegisterViewController.swift in Sources */,
 				BE9DE3962B159D6100C928FE /* AddEventView.swift in Sources */,
 				BE9DE3932B1579AC00C928FE /* EventsTableViewManager.swift in Sources */,

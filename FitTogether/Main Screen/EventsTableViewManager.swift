@@ -22,6 +22,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let displayEventViewController = DisplayEventViewController()
+        displayEventViewController.currentUser = self.currentUser
         var activities = [Activity]()
         
         if (eventsList[indexPath.row].fruit != 0) {

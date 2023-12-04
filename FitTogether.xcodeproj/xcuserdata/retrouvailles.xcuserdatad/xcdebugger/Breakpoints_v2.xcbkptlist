@@ -158,8 +158,8 @@
             filePath = "FitTogether/Main Screen/EventsTableViewManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -177,6 +177,86 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89311158-96E1-4B63-8DEA-20FA5A6AD14E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitTogether/Friends Chat Screen/FriendsChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EC25E45-A0C0-4507-8828-7F604FBF1EEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitTogether/Friends Chat Screen/FriendsChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5EC25E45-A0C0-4507-8828-7F604FBF1EEC - 41b1417e5bb1037f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FitTogether.FriendsChatViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "FitTogether"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/retrouvailles/Desktop/classes/cs5520/final%20project/FitTogether/FitTogether/Friends%20Chat%20Screen/FriendsChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  uuid = "5EC25E45-A0C0-4507-8828-7F604FBF1EEC - 41b1417e5bb1037f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FitTogether.FriendsChatViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "FitTogether"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/retrouvailles/Desktop/classes/cs5520/final%20project/FitTogether/FitTogether/Friends%20Chat%20Screen/FriendsChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "946">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16B60276-94EB-4D82-94B4-771C23B9B9B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitTogether/Display Event Screen/DisplayEventViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "onShareButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

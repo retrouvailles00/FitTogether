@@ -108,6 +108,7 @@ class ViewController: UIViewController {
     
     @objc func friendsChatButtonTapped() {
         let friendsChatViewController = FriendsChatViewController()
+        friendsChatViewController.currentUser = self.currentUser
         navigationController?.pushViewController(friendsChatViewController, animated: true)
     }
     
