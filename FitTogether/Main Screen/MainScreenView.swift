@@ -11,6 +11,7 @@ import UIKit
 class MainScreenView: UIView {
 
     var profilePic: UIImageView!
+    var friendsChatButton: UIButton!
     var nearbyButton: UIButton!
     var labelText: UILabel!
     var labelTotal: UILabel!
@@ -22,6 +23,7 @@ class MainScreenView: UIView {
         self.backgroundColor = .white
         
         setUpProfilePic()
+        setUpFriendsChatButton()
         setUpNearbyButton()
         setUpLabelText()
         setUpLabelTotal()
@@ -39,6 +41,22 @@ class MainScreenView: UIView {
         profilePic.layer.masksToBounds = true
         profilePic.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(profilePic)
+    }
+    
+    func setUpFriendsChatButton() {
+        friendsChatButton = UIButton(type: .system)
+        friendsChatButton.setTitle("", for: .normal)
+        friendsChatButton.setImage(UIImage(systemName: "person.3.fill")?.withRenderingMode(.alwaysOriginal), for: .normal)
+        friendsChatButton.contentHorizontalAlignment = .fill
+        friendsChatButton.contentVerticalAlignment = .fill
+        friendsChatButton.imageView?.contentMode = .scaleAspectFit
+        friendsChatButton.layer.cornerRadius = 16
+        friendsChatButton.imageView?.layer.shadowOffset = .zero
+        friendsChatButton.imageView?.layer.shadowRadius = 0.8
+        friendsChatButton.imageView?.layer.shadowOpacity = 0.7
+        friendsChatButton.imageView?.clipsToBounds = true
+        friendsChatButton.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(friendsChatButton)
     }
     
     func setUpNearbyButton() {
@@ -107,10 +125,15 @@ class MainScreenView: UIView {
             labelText.bottomAnchor.constraint(equalTo: profilePic.bottomAnchor),
             labelText.leadingAnchor.constraint(equalTo: profilePic.trailingAnchor, constant: 8),
             
+            friendsChatButton.widthAnchor.constraint(equalToConstant: 32),
+            friendsChatButton.heightAnchor.constraint(equalToConstant: 32),
+            friendsChatButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 8),
+            friendsChatButton.trailingAnchor.constraint(equalTo: nearbyButton.leadingAnchor, constant: -20),
+            
             nearbyButton.widthAnchor.constraint(equalToConstant: 32),
             nearbyButton.heightAnchor.constraint(equalToConstant: 32),
             nearbyButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 8),
-            nearbyButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            nearbyButton.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
             
             labelTotal.topAnchor.constraint(equalTo: profilePic.bottomAnchor),
             labelTotal.leadingAnchor.constraint(equalTo: profilePic.trailingAnchor),

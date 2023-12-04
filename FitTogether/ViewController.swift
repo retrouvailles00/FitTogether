@@ -69,7 +69,7 @@ class ViewController: UIViewController {
                                     let event  = try document.data(as: Event.self)
                                     if let intake = Int(exactly: event.intake) {
                                         if let consume = Int(exactly: event.consume) {
-                                            self.totalConsume = (self.totalConsume ?? 0) + (consume - intake)
+                                            self.totalConsume = (self.totalConsume ?? 0) + (intake - consume)
                                         }
                                     }
                                     self.mainScreen.labelTotal.text = "You have " + String(totalConsume ?? 0) + " calories workout"
@@ -97,12 +97,18 @@ class ViewController: UIViewController {
         view.bringSubviewToFront(mainScreen.floatingButtonAddEvent)
         mainScreen.floatingButtonAddEvent.addTarget(self, action: #selector(addEventButtonTapped), for: .touchUpInside)
         mainScreen.nearbyButton.addTarget(self, action: #selector(nearbyButtonTapped), for: .touchUpInside)
+        mainScreen.friendsChatButton.addTarget(self, action: #selector(friendsChatButtonTapped), for: .touchUpInside)
     }
     
     @objc func addEventButtonTapped() {
         let addEventViewController = AddEventViewController()
         addEventViewController.currentUser = currentUser
         navigationController?.pushViewController(addEventViewController, animated: true)
+    }
+    
+    @objc func friendsChatButtonTapped() {
+        let friendsChatViewController = FriendsChatViewController()
+        navigationController?.pushViewController(friendsChatViewController, animated: true)
     }
     
     @objc func nearbyButtonTapped() {

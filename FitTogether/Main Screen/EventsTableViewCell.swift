@@ -12,6 +12,7 @@ class EventsTableViewCell: UITableViewCell {
     var wrapperCellView: UIView!
     var labelIntake: UILabel!
     var labelConsume: UILabel!
+    var labelDate: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -61,7 +62,7 @@ class EventsTableViewCell: UITableViewCell {
             wrapperCellView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
             wrapperCellView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             
-            labelIntake.topAnchor.constraint(equalTo: wrapperCellView.topAnchor, constant: 8),
+            labelIntake.topAnchor.constraint(equalTo: wrapperCellView.topAnchor, constant: 10),
             labelIntake.leadingAnchor.constraint(equalTo: wrapperCellView.leadingAnchor, constant: 16),
             labelIntake.heightAnchor.constraint(equalToConstant: 20),
             labelIntake.widthAnchor.constraint(lessThanOrEqualTo: wrapperCellView.widthAnchor),

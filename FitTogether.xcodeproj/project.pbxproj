@@ -63,6 +63,8 @@
 		BE9DE3B32B1D288300C928FE /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B22B1D288300C928FE /* runner.png */; };
 		BE9DE3B52B1D288800C928FE /* man-biking.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B42B1D288800C928FE /* man-biking.png */; };
 		BE9DE3B72B1D288C00C928FE /* martial_arts_uniform.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */; };
+		BE9DE3BA2B1DA4C300C928FE /* FriendsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3B92B1DA4C300C928FE /* FriendsChatView.swift */; };
+		BE9DE3BC2B1E68CE00C928FE /* FriendsChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DE3BB2B1E68CE00C928FE /* FriendsChatViewController.swift */; };
 		BEC49C772B07332500A94F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C762B07332500A94F10 /* AppDelegate.swift */; };
 		BEC49C792B07332500A94F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C782B07332500A94F10 /* SceneDelegate.swift */; };
 		BEC49C7B2B07332500A94F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49C7A2B07332500A94F10 /* ViewController.swift */; };
@@ -107,6 +109,8 @@
 		BE9DE3B22B1D288300C928FE /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
 		BE9DE3B42B1D288800C928FE /* man-biking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-biking.png"; sourceTree = "<group>"; };
 		BE9DE3B62B1D288C00C928FE /* martial_arts_uniform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = martial_arts_uniform.png; sourceTree = "<group>"; };
+		BE9DE3B92B1DA4C300C928FE /* FriendsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsChatView.swift; sourceTree = "<group>"; };
+		BE9DE3BB2B1E68CE00C928FE /* FriendsChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsChatViewController.swift; sourceTree = "<group>"; };
 		BEC49C732B07332500A94F10 /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC49C762B07332500A94F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC49C782B07332500A94F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +249,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		BE9DE3B82B1DA4A100C928FE /* Friends Chat Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DE3B92B1DA4C300C928FE /* FriendsChatView.swift */,
+				BE9DE3BB2B1E68CE00C928FE /* FriendsChatViewController.swift */,
+			);
+			path = "Friends Chat Screen";
+			sourceTree = "<group>";
+		};
 		BEC49C6A2B07332500A94F10 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +277,7 @@
 		BEC49C752B07332500A94F10 /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				BE9DE3B82B1DA4A100C928FE /* Friends Chat Screen */,
 				BE9DE3AB2B1D284800C928FE /* Images */,
 				BE9DE3A02B17130300C928FE /* Display Event Screen */,
 				BE9DE3992B1694DF00C928FE /* Map Screen */,
@@ -400,12 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9DE3BC2B1E68CE00C928FE /* FriendsChatViewController.swift in Sources */,
 				BE2C2F092B15498500270149 /* RegisterFirebaseManager.swift in Sources */,
 				BE2C2F052B15493300270149 /* RegisterProgressIndicatorManager.swift in Sources */,
 				BE2C2F4F2B154C1000270149 /* EventsTableViewCell.swift in Sources */,
 				BE9DE39D2B16953500C928FE /* MapViewController.swift in Sources */,
 				BEC49C7B2B07332500A94F10 /* ViewController.swift in Sources */,
 				BE2C2F532B154E7000270149 /* Event.swift in Sources */,
+				BE9DE3BA2B1DA4C300C928FE /* FriendsChatView.swift in Sources */,
 				BE2C2F472B154A6500270149 /* ProgressSpinnerViewController.swift in Sources */,
 				BE2C2F032B15490A00270149 /* RegisterView.swift in Sources */,
 				BE9DE3982B15AB1B00C928FE /* AddEventViewController.swift in Sources */,
