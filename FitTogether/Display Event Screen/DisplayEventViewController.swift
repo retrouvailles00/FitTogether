@@ -51,20 +51,26 @@ class DisplayEventViewController: UIViewController {
         
         let shareAction = UIAlertAction(title: "Share", style: .default, handler: {(_) in
             if let email = shareAlert.textFields![0].text {
-                //generate new message and add to db
-                var messageText : String = ""
-                for activity in self.activitiesList {
-                    messageText += activity.type + " "  + String(activity.quantity) + "  "
+                if (!self.isValidEmail(email)) {
+                    self.showInvalidEmail()
+                } else {
+                    //generate new message and add to db
+                    var messageText : String = ""
+                    for activity in self.activitiesList {
+                        messageText += activity.type + " "  + String(activity.quantity) + "  "
+                        
+                    }
                     
+                    let sender = self.currentUser?.email
+                    let receiver = email
+                    let date = Date()
+                    
+                    let message = Message(sender: sender!, receiver: receiver, messageText: messageText, date: date)
+                    
+                    self.saveMessageToFireStore(message: message)
                 }
-                
-                let sender = self.currentUser?.email
-                let receiver = email
-                let date = Date()
-                
-                let message = Message(sender: sender!, receiver: receiver, messageText: messageText, date: date)
-                
-                self.saveMessageToFireStore(message: message)
+            } else {
+                self.showEmptyAlert()
             }
         })
         
@@ -113,4 +119,25 @@ class DisplayEventViewController: UIViewController {
             print("error")
         }
     }
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
+    func showInvalidEmail() {
+        let alert = UIAlertController(title: "Error!", message: "You must enter valid email to continue", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    
+    func showEmptyAlert() {
+        let alert = UIAlertController(title: "Error!", message: "Text Field must not be empty!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    
+    
 }
